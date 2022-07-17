@@ -30,6 +30,8 @@ export function Navbar() {
       <UnorderedList>
         {orderedCompanyNames.map((company, i) => (
           <ListItem onClick={() => handleClick(company)} key={i}>
+            {/* Attaching a click event directly to the list item in this way means that the markup rendered to the page is inaccessible,
+            in a few ways. Can you use a different component, or nest a link or button inside of it? */}
             {company}
           </ListItem>
         ))}

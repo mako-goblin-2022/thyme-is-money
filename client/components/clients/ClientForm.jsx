@@ -70,6 +70,7 @@ export function ClientForm(props) {
               as={Input}
               name="rate"
               id="reate"
+              // Typo "reate" is causing this to fail connection with the label
               type="number"
               variant="filled"
             />
